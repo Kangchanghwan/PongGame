@@ -35,5 +35,20 @@ public class PlayerPaddle : NetworkBehaviour
         {
             return;
         }
+
+        if (!IsOwner)
+        {
+            return;
+        }
+
+        var input = Input.GetAxis("Vertical");
+        
+        var distance = input * speed * Time.deltaTime;
+        var position = transform.position;
+        position.y += distance;
+
+        position.y = Mathf.Clamp(position.y, -4.5f, 4.5f);
+        transform.position = position;
     }
+    
 }

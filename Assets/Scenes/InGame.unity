@@ -1059,8 +1059,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1506963610}
-  - component: {fileID: 1506963611}
   - component: {fileID: 1506963613}
+  - component: {fileID: 1506963611}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -1095,6 +1095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4233e9606cd3348a1989117e610a6531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   scoreText: {fileID: 1673266226}
   playerColors:
   - {r: 0, g: 0, b: 1, a: 1}
@@ -1120,6 +1121,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GlobalObjectIdHash: 1064696552
   InScenePlacedSourceGlobalObjectIdHash: 0
+  DeferredDespawnTick: 0
+  Ownership: 1
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
   ActiveSceneSynchronization: 0
@@ -1127,6 +1130,8 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
 --- !u!1 &1636207208
 GameObject:
   m_ObjectHideFlags: 0

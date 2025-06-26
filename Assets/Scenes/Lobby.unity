@@ -739,8 +739,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 704595283}
-  - component: {fileID: 704595282}
   - component: {fileID: 704595284}
+  - component: {fileID: 704595282}
   m_Layer: 0
   m_Name: Lobby Manager
   m_TagString: Untagged
@@ -760,6 +760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4b41b273a01348328468bb5a2ff5905, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
   lobbyText: {fileID: 561443844}
 --- !u!4 &704595283
 Transform:
@@ -790,13 +791,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GlobalObjectIdHash: 1056019430
   InScenePlacedSourceGlobalObjectIdHash: 0
+  DeferredDespawnTick: 0
+  Ownership: 1
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
   ActiveSceneSynchronization: 0
-  SceneMigrationSynchronization: 1
+  SceneMigrationSynchronization: 0
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
 --- !u!1 &1243938600
 GameObject:
   m_ObjectHideFlags: 0
